@@ -1,0 +1,55 @@
+{
+  "name": "node-tdx",
+  "version": "0.1.0",
+  "description": "Node.js client for TDX (通达信) stock market TCP protocol",
+  "license": "MIT",
+  "author": "interstellarmt",
+  "homepage": "https://github.com/interstellarmt/node-tdx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interstellarmt/node-tdx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/interstellarmt/node-tdx/issues"
+  },
+  "keywords": [
+    "tdx",
+    "通达信",
+    "stock",
+    "a-share",
+    "market-data",
+    "quote",
+    "kline"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "tsx src/__tests__/connect.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}
