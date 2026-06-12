@@ -1,5 +1,5 @@
 {
-  "name": "node-tdx",
+  "name": "node-tdx-market",
   "version": "0.1.0",
   "description": "Node.js client for TDX (通达信) stock market TCP protocol",
   "license": "MIT",
